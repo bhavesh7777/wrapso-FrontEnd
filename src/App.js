@@ -1,8 +1,8 @@
 import React from 'react'
 import './App.css'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import Login from './pages/login/login.component'
 import Home from './pages/home/home.component'
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import withLayout from './component/header/withLayout/withLayout.component'
 
 const HomeWithLayout = withLayout(Home)

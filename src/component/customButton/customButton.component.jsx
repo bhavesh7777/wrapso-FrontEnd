@@ -1,15 +1,13 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './customButton.styles.css'
 
-export default class CustomButton extends Component {
-  render() {
-    const { isSendOtpButton } = this.props
-    return (
-      <button
-        className={`custom-button ${isSendOtpButton ? 'send-otp-button' : ''} `}
-      >
-        send otp
-      </button>
-    )
-  }
-}
+const CustomButton = ({ isSendOtpButton, buttonText }) => (
+  <button
+    type="button"
+    className={`custom-button ${isSendOtpButton ? 'send-otp-button' : ''} `}
+  >
+    {buttonText}
+  </button>
+)
+
+export default CustomButton

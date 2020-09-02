@@ -1,17 +1,15 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './customInput.styles.css'
 
-export default class CustomInput extends Component {
-  render() {
-    const { name, handleChange, placeholder, value } = this.props
-    return (
-      <input
-        name={name}
-        onChange={handleChange}
-        className="custom-input"
-        placeholder={placeholder}
-        value={value}
-      />
-    )
-  }
-}
+const CustomInput = ({ name, handleChange, placeholder, value }) => (
+  <input
+    name={name}
+    onChange={handleChange}
+    className="custom-input"
+    placeholder={placeholder}
+    value={value}
+    required
+  />
+)
+
+export default CustomInput
