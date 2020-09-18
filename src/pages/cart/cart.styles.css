@@ -1,0 +1,25 @@
+.cart-container {
+  width: 60%;
+  margin: 30px auto;
+  background-color: #f2f2f2;
+  padding: 15px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+span.price {
+  float: right;
+}
+
+.item-details {
+  display: flex;
+  justify-content: space-between;
+}
+.item-name-button {
+  padding: 5px;
+  display: flex;
+}
+.remove-button {
+  font-size: 15px;
+  margin: 0 10px;
+}

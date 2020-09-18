@@ -3,7 +3,7 @@ import './customButton.styles.css'
 
 const CustomButton = ({ isSendOtpButton, buttonText }) => (
   <button
-    type="button"
+    type="submit"
     className={`custom-button ${isSendOtpButton ? 'send-otp-button' : ''} `}
   >
     {buttonText}

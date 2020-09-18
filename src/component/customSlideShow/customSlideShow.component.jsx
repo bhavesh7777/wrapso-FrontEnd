@@ -9,21 +9,19 @@ const slideImages = [
   'https://thepromox.com/wp-content/uploads/2018/04/faasos-50-off-coupon.png',
 ]
 
-const Slideshow = () => {
-  return (
-    <div className="slide-container">
-      <Slide>
-        <div className="each-slide">
-          <div style={{ backgroundImage: `url(${slideImages[0]})` }} />
-        </div>
-        <div className="each-slide">
-          <div style={{ backgroundImage: `url(${slideImages[1]})` }} />
-        </div>
-        <div className="each-slide">
-          <div style={{ backgroundImage: `url(${slideImages[2]})` }} />
-        </div>
-      </Slide>
-    </div>
-  )
-}
+const Slideshow = () => (
+  <div className="slide-container">
+    <Slide>
+      <div className="each-slide">
+        <div style={{ backgroundImage: `url(${slideImages[0]})` }} />
+      </div>
+      <div className="each-slide">
+        <div style={{ backgroundImage: `url(${slideImages[1]})` }} />
+      </div>
+      <div className="each-slide">
+        <div style={{ backgroundImage: `url(${slideImages[2]})` }} />
+      </div>
+    </Slide>
+  </div>
+)
 export default Slideshow
