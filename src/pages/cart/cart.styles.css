@@ -8,6 +8,13 @@
   border-radius: 3px;
 }
 
+@media (max-width: 767px) {
+  .cart-container,
+  .payment-container {
+    width: 90%;
+  }
+}
+
 span.price {
   float: right;
 }
@@ -32,10 +39,10 @@ span.price {
   display: flex;
   flex-direction: column;
 }
-.title {
-  font-size: 30px;
-  margin-bottom: 5px;
-  margin-top: 10px;
+.main-title {
+  margin-top: 5px;
+  font-size: 25px;
+  margin-bottom: 10px;
 }
 input[type='text'],
 select {
@@ -67,11 +74,19 @@ select {
 }
 label {
   margin-top: 20px;
-  font-size: 20px;
+  font-size: 18px;
   display: block;
 }
 
 .food-name {
-  width: 200px;
+  width: 180px;
   margin-right: 8px;
+}
+
+.not-found {
+  width: 100%;
+  height: 80%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }

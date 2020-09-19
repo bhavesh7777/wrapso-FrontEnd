@@ -1,5 +1,6 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom'
+import { Divider } from 'semantic-ui-react'
 import CustomSlideShow from '../../component/customSlideShow/customSlideShow.component'
 import CustomCard from '../../component/customCategoryCard/customCategoryCard.component'
 import './home.styles.css'
@@ -13,7 +14,12 @@ const Home = () => {
   return (
     <>
       <div className="home" />
+
       <CustomSlideShow />
+      <div className="divider">
+        <Divider horizontal>Food Category</Divider>
+      </div>
+
       <div className="card-panel-container">
         <CustomCard
           img="https://tastesbetterfromscratch.com/wp-content/uploads/2017/04/Crispy-BBQ-Chicken-Wraps-2.jpg"

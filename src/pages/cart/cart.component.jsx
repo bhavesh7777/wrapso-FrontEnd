@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-import { Button } from 'semantic-ui-react'
+import { Button, Popup } from 'semantic-ui-react'
 import './cart.styles.css'
 
 const Cart = () => {
@@ -27,7 +27,7 @@ const Cart = () => {
     return (
       <>
         <div className="cart-container">
-          <h4>Order Summary</h4>
+          <div className="main-title">Order Summary</div>
           {cartItemsArray &&
             cartItemsArray.map((cartItems) => (
               <div className="item-details">
@@ -40,14 +40,20 @@ const Cart = () => {
                     {cartItems.foodName}
                   </div>
                   <div className="button-container">
-                    <Button
-                      className="remove-button"
-                      onClick={() => removeToCart(cartItems.orderId)}
-                      circular
-                      icon="trash"
-                      size="mini"
-                      inverted
-                      color="red"
+                    <Popup
+                      size="small"
+                      content="remove item"
+                      trigger={
+                        <Button
+                          className="remove-button"
+                          onClick={() => removeToCart(cartItems.orderId)}
+                          circular
+                          icon="trash"
+                          size="mini"
+                          inverted
+                          color="red"
+                        />
+                      }
                     />
                   </div>
                 </div>
@@ -62,7 +68,7 @@ const Cart = () => {
         </div>
 
         <div className="payment-container">
-          <div className="title">Billing Address</div>
+          <div className="main-title">Billing Address</div>
           <div className="form-container">
             <form onClick="" className="form-details">
               <label>Full Name</label>
@@ -110,7 +116,7 @@ const Cart = () => {
       </>
     )
   }
-  return <div>loading...</div>
+  return <div className="not-found">No items added to cart</div>
 }
 
 export default Cart
