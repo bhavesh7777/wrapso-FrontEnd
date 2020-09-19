@@ -1,4 +1,5 @@
-.cart-container {
+.cart-container,
+.payment-container {
   width: 60%;
   margin: 30px auto;
   background-color: #f2f2f2;
@@ -12,14 +13,65 @@ span.price {
 }
 
 .item-details {
+  align-items: center;
   display: flex;
   justify-content: space-between;
 }
 .item-name-button {
+  align-items: center;
   padding: 5px;
   display: flex;
 }
-.remove-button {
-  font-size: 15px;
-  margin: 0 10px;
+
+.veg-image {
+  margin-right: 5px;
+  height: 15px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  font-size: 30px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+input[type='text'],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-button {
+  border-color: #4caf50;
+  background: white;
+  margin-top: 20px;
+  height: 45px;
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+.form-button:hover {
+  background: #4caf50;
+  color: white;
+}
+
+.checkbox {
+  margin-top: 20px;
+}
+label {
+  margin-top: 20px;
+  font-size: 20px;
+  display: block;
+}
+
+.food-name {
+  width: 200px;
+  margin-right: 8px;
 }
