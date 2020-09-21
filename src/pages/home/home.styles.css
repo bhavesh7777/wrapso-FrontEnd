@@ -6,8 +6,9 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-.divider {
-  margin-top: 20px;
+
+.ui.horizontal.divider {
+  font-size: 20px;
 }
 .category-title {
   font-family: 'Times New Roman', Times, serif;

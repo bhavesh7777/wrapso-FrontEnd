@@ -19,6 +19,12 @@ const Header = () => (
           <li>
             <a href="/cart">Cart</a>
           </li>
+          <li>
+            <a href="/logout">Profile</a>
+          </li>
+          <li>
+            <a href="/logout">Logout</a>
+          </li>
         </ul>
       </div>
     </nav>

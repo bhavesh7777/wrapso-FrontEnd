@@ -27,3 +27,20 @@
 
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
+.custom-card-container:hover {
+  width: 230px;
+  height: 300px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 767px) {
+  .custom-card-container {
+    margin: 40px;
+    background: grey;
+    width: 270px;
+    height: 320px;
+    border-radius: 15px;
+    filter: drop-shadow(0px 4px 4px rgba(82, 55, 55, 0.25));
+  }
+}

@@ -26,6 +26,15 @@
   flex: 1;
 }
 
+.header__navigation-items {
+  padding: 10px;
+  overflow-x: scroll;
+}
+
+.header__navigation-items::-webkit-scrollbar {
+  display: none;
+}
+
 .header__navigation-items ul {
   display: flex;
   list-style: none;

@@ -29,8 +29,9 @@ const CustomItemCard = ({
                 content="Add to cart"
                 trigger={
                   <Button
+                    className="add-button"
                     basic
-                    color="black"
+                    color="primary"
                     onClick={addToCart}
                     icon="add"
                     size="mini"

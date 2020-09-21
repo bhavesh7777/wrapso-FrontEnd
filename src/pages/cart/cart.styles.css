@@ -45,6 +45,8 @@ span.price {
   margin-bottom: 10px;
 }
 input[type='text'],
+input[type='number'],
+input[type='email'],
 select {
   width: 100%;
   padding: 12px 20px;
@@ -56,6 +58,7 @@ select {
 }
 
 .form-button {
+  width: 100%;
   border-color: #4caf50;
   background: white;
   margin-top: 20px;
@@ -89,4 +92,23 @@ label {
   align-items: center;
   display: flex;
   justify-content: center;
+}
+
+.not-found {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.order-now {
+  width: 15%;
+  height: 30px;
+  background: white;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-top: 8px;
+}
+
+.order-now:hover {
+  background: #dfdfdf;
 }

@@ -6,19 +6,19 @@ import CustomCard from '../../component/customCategoryCard/customCategoryCard.co
 import './home.styles.css'
 
 const Home = () => {
-  console.log('homeapge')
   const history = useHistory()
   const redirectCategories = (category) => {
-    history.push({ pathname: `/itemCollection/${category}` })
+    history.push({
+      pathname: `/itemCollection/${category}`,
+    })
   }
   return (
     <>
       <div className="home" />
 
       <CustomSlideShow />
-      <div className="divider">
-        <Divider horizontal>Food Category</Divider>
-      </div>
+
+      <Divider horizontal>Food Category</Divider>
 
       <div className="card-panel-container">
         <CustomCard
@@ -27,7 +27,7 @@ const Home = () => {
           onClick={() => redirectCategories('wrap')}
         />
         <CustomCard
-          img="https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/216054.jpg"
+          img="https://static.toiimg.com/photo/53110049.cms"
           imgName="Pizza"
           onClick={() => redirectCategories('pizza')}
         />
